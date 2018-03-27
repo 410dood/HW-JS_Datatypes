@@ -129,10 +129,16 @@ let bondTitles = [];
 
 // "5th COMMIT - Made an array of bond titles".
 // Create a new array oddBonds, of only the Bond films released on odd-numbered years.
+let oddBonds = [];
+  for (let i = 0; i < bondFilms.length; i++) {
+    if (bondFilms[i].year % 2 != 0) {
+      oddBonds.push(bondFilms[i]);
+  }
+}
+  console.log(oddBonds);
 
-// 🔴 **Commit your work.**
-// The commit message should read:
-// "6th commit - made an array of odd bonds".
+// "6th COMMIT - made an array of odd bonds".
+
 // Determine the total cumulative gross of the Bond franchise, and console.log the result. hint To make the grosses into usable numbers, look into the .replace Javascript method (there are many ways to do this, however). Look into parseInt also.
 // 🔴 **Commit your work.**
 // The commit message should read:
