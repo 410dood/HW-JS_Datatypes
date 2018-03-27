@@ -140,6 +140,47 @@ let oddBonds = [];
 // "6th COMMIT - made an array of odd bonds".
 
 // Determine the total cumulative gross of the Bond franchise, and console.log the result. hint To make the grosses into usable numbers, look into the .replace Javascript method (there are many ways to do this, however). Look into parseInt also.
+const cumulative = [];
+    for (let i = 0; i < bondFilms.length; i++) {
+     cumulative.push(bondFilms[i].gross.replace('$', '').replace(/,/g,'').replace(',',''));
+}
+console.log(cumulative);
+arrSum = function(cumulative){
+  return cumulative.reduce(function(a,b){
+    return a + b
+  }, 0);
+}
+console.log(arrSum);
+
+// sum = cumulative[i].reduce(function(a, b) {
+//   return a + b;
+// // function for adding two numbers. Easy!
+// const add = (a, b) =>
+//   a + b
+// // use reduce to sum our array
+// const sum = cumulative.reduce(add)
+
+// console.log(sum); // 6
+// console.log("bob");
+// console.log(cumulative);
+// console.log("john");
+
+
+// console.log(typeof('622246378'));
+
+// let moneys = [];
+//   for (let i = 0; i < cumulative.length; i++) {
+//   moneys.push(parseInt(cumulative[i], 10));
+// console.log(moneys);
+// console.log("bro");
+// console.log(moneys[i]);
+// console.log("hey");
+// //var moneys = parseInt((bondFilms[0].gross), 10);
+
+// }
+
+
+
 // 🔴 **Commit your work.**
 // The commit message should read:
 // "7th commit - determined the bond films gross".
