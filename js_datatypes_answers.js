@@ -68,34 +68,30 @@ console.log(crazyObject.larry.nicknames[1]);
 // The object the contains the name funkhauser
 console.log(crazyObject.larry.characters[1]);
 
-// 🔴 **Commit your work.**
-// The commit message should read:
-// "3rd commit - performed operations on the crazy object".
-// Object-ception
-// With the following object:
+// "3rd COMMIT - performed operations on the crazy object".
 
-// const inception = {
-//    reality: {
-//        dreamLayer1: {
-//            dreamLayer2: {
-//                dreamLayer3: {
-//                    dreamLayer4: {
-//                        dreamLayer5: {
-//                            dreamLayer6: {
-//                                limbo: "Joseph Gordon Levitt"
-//                           }
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//    }
-// }
+const inception = {
+   reality: {
+       dreamLayer1: {
+           dreamLayer2: {
+               dreamLayer3: {
+                   dreamLayer4: {
+                       dreamLayer5: {
+                           dreamLayer6: {
+                               limbo: "Joseph Gordon Levitt"
+                          }
+                       }
+                   }
+               }
+           }
+       }
+   }
+}
 // Change the value of limbo to null.
+inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = "null";
+console.log(inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6);
 
-// 🔴 **Commit your work.**
-// The commit message should read:
-// "4th commit - accessed limbo".
+// "4th COMMIT - accessed limbo".
 // Bond Films
 // Array of objects:
 // const bondFilms = [
